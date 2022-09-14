@@ -87,6 +87,7 @@ header .menu.right ul li i:hover {
   padding-top: 100px;
   display: inline-block;
 	position: relative;
+  cursor: pointer;
 }
 
 .card .image img {
@@ -96,6 +97,19 @@ header .menu.right ul li i:hover {
 .card .image {
   position: relative;
 }
+
+.back {
+  display: none;
+}
+
+.image:hover .back {
+  display: block;
+}
+
+.image:hover .front {
+  display: none;
+}
+
 
 .card .image .heart .heart-box {
   display: flex;
@@ -107,10 +121,11 @@ header .menu.right ul li i:hover {
   width: 40px;
   height: 40px;
   background-color: white;
+  color: black;
 }
 
-.card .image .heart .heart-box i {
-  color: black;
+.image:hover .heart .heart-box {
+  color: red;
 }
 
 .card .image .discount .discount-box {
